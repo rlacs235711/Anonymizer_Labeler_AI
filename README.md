@@ -137,8 +137,3 @@ folder.
 Do not commit raw DICOMs, anonymized DICOMs, model caches, or generated outputs.
 For real sensitive data, prefer RSNA Anonymizer or another validated
 de-identification tool before running MedGemma labeling.
-
-## Previous Notes
-
-The prior README content, including demo-app notes, is preserved in
-`README_reference.md` for future reference.
