@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+demo_app.py
+README_reference.md
+model_cache/
+models_cache/
+input/*
+!input/.gitkeep
+sample_input/*
+output*/
