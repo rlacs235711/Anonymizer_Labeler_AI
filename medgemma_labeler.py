@@ -4,7 +4,10 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from label_creator import label_input_path
+try:
+    from .label_creator import label_input_path
+except ImportError:
+    from label_creator import label_input_path
 
 
 def _label_result_to_row(result: dict) -> dict:

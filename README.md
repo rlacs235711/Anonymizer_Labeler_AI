@@ -12,6 +12,7 @@ This is a research prototype and is not for clinical use.
 
 ```text
 pipeline_anonymize_label/
+  label_creator/         # bundled DICOM rendering + MedGemma labeling helper
   input/                 # local batch inputs; contents not committed
   output/                # generated run output; not committed
   output (1)/            # created automatically if output/ is populated
@@ -34,8 +35,9 @@ From the project root:
 pip install -r pipeline_anonymize_label/requirements-pipeline.txt
 ```
 
-The pipeline imports `label_creator`, so keep this folder at the project root
-next to `label_creator/`.
+The `label_creator/` helper package is bundled in this repository. It contains
+the DICOM loading/rendering utilities and MedGemma body-part labeling code used
+by the batch pipeline.
 
 ## Run
 

@@ -8,7 +8,10 @@ import tempfile
 import zipfile
 from pathlib import Path
 
-from label_creator.dicom_utils import collect_dicom_files, group_by_series, is_dicom_file
+try:
+    from .label_creator.dicom_utils import collect_dicom_files, group_by_series, is_dicom_file
+except ImportError:
+    from label_creator.dicom_utils import collect_dicom_files, group_by_series, is_dicom_file
 
 
 MAX_EXTRACTED_BYTES = 4 * 1024 * 1024 * 1024
